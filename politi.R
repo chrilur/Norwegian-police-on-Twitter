@@ -11,7 +11,7 @@ print("Henter data fra Twitter...")
 tw.df <- data.frame()
 for (i in 1:length(konti)) {
         cat("Konto:", konti[i])
-        tw <- userTimeline(konti[i], n=50)
+        tw <- userTimeline(konti[i],"\n", n=50)
         tw <- twListToDF(tw)
         tw <- tw[,!(names(tw) %in% droppes)]
         tw$text <- gsub("\"", "", tw$text)
