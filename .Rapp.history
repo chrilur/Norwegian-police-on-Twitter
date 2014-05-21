@@ -1,0 +1,5 @@
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+1-2-3
+setwd ('/Users/chrilur/Documents/R/twpoliti/')
+source('getTwitter.R')
+source('polititot.R')
